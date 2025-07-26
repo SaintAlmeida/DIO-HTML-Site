@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Clínica Cardiológica Vida Saudável</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0; padding: 0;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #007B8F;
+            padding: 15px;
+            color: white;
+        }
+        nav ul {
+            margin: 0; padding: 0;
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+        nav ul li {
+            display: inline;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        main {
+            max-width: 900px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 0 8px rgba(0,0,0,0.1);
+        }
+        section {
+            margin-bottom: 40px;
+        }
+        h1,h2,h3,h4,h5,h6 {
+            color: #004A57;
+        }
+        p {
+            line-height: 1.6;
+        }
+        mark {
+            background-color: yellow;
+        }
+        small {
+            font-size: 0.8em;
+            color: #666;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        table, th, td {
+            border: 1px solid #ccc;
+        }
+        th, td {
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #007B8F;
+            color: white;
+        }
+        footer {
+            background-color: #004A57;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        form label {
+            display: block;
+            margin-top: 15px;
+        }
+        form input, form select, form textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            box-sizing: border-box;
+        }
+        form button {
+            margin-top: 15px;
+            background-color: #007B8F;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        form button:hover {
+            background-color: #005f67;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Clínica Cardiológica Vida Saudável</h1>
+        <nav>
+            <ul>
+                <li><a href="#principal">Página Principal</a></li>
+                <li><a href="#sobre">Sobre a clínica</a></li>
+                <li><a href="#horario">Horário de Atendimento</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Página Principal -->
+        <section id="principal">
+            <h2>Bem-vindo à nossa Clínica</h2>
+            <p>Oferecemos atendimento <strong>especializado em cardiologia</strong> para cuidar da sua saúde cardiovascular com tecnologia de ponta e uma equipe experiente.</p>
+            <p>Nosso objetivo é proporcionar um atendimento <mark>humanizado</mark> e eficaz, garantindo o seu bem-estar.</p>
+            <img src="https://images.unsplash.com/photo-1588776814546-54f451ecb5a7?auto=format&fit=crop&w=900&q=80" alt="Clínica médica" width="100%" />
+            <small>Foto ilustrativa da clínica</small>
+        </section>
+
+        <!-- Sobre a clínica -->
+        <section id="sobre">
+            <h2>Sobre a Clínica</h2>
+            <p>A <em>Clínica Cardiológica Vida Saudável</em> foi fundada em 2010 com o propósito de fornecer atendimento especializado e de qualidade para pacientes com doenças cardíacas.</p>
+            <p>Contamos com equipamentos modernos e uma equipe de cardiologistas renomados. Nossos serviços incluem:</p>
+            <ul>
+                <li>Consultas e exames clínicos</li>
+                <li>Teste ergométrico</li>
+                <li>Ecocardiograma</li>
+                <li>Monitoramento 24h do coração</li>
+            </ul>
+            <p>Estamos localizados no centro da cidade, com fácil acesso e estacionamento gratuito.</p>
+        </section>
+
+        <!-- Horário de Atendimento -->
+        <section id="horario">
+            <h2>Horário de Atendimento</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Dia</th>
+                        <th>Horário</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Segunda a Sexta</td><td>08:00 - 18:00</td></tr>
+                    <tr><td>Sábado</td><td>08:00 - 12:00</td></tr>
+                    <tr><td>Domingo</td><td>Fechado</td></tr>
+                </tbody>
+            </table>
+            <hr />
+            <blockquote cite="https://www.who.int/news-room/fact-sheets/detail/cardiovascular-diseases-(cvds)">
+                "As doenças cardiovasculares são a principal causa de morte no mundo, mas com prevenção e cuidado adequado podem ser evitadas." — Organização Mundial da Saúde
+            </blockquote>
+        </section>
+
+        <!-- Contato -->
+        <section id="contato">
+            <h2>Contato</h2>
+            <form action="#" method="POST">
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" name="nome" required placeholder="Digite seu nome completo" />
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required placeholder="Digite seu e-mail" />
+
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" />
+
+                <label for="assunto">Assunto:</label>
+                <select id="assunto" name="assunto" required>
+                    <option value="">--Selecione--</option>
+                    <option value="consulta">Agendar Consulta</option>
+                    <option value="exame">Informações sobre Exames</option>
+                    <option value="outros">Outros</option>
+                </select>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="4" placeholder="Escreva sua mensagem"></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Clínica Cardiológica Vida Saudável. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
